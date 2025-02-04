@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hospital</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/style.css" >
+</head>
+
+	<body>
+    <header id="header">
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="#service">service and conditions</a></li>
+                <!-- <li><a href="">find a doctor</a></li> -->
+                <li><a href="/appointment">patient and visitors</a></li>
+                <!-- <li><a href="">location</a></li> -->
+                <li><a href="#header">home</a></li>
+                <li><a href="">about</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="sec1">
+        <div class="curosalcontainer">
+            <div class="container">
+                <div class="curosal">
+					<img th:src="@{/images/hospital.png}" />
+                </div>
+                <div class="curosal">
+					<img src="blob:chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/1227c042-c73e-4593-9d4b-7e83873c2754" alt="">
+                </div>
+
+                <div class="curosal">
+					<img src="blob:chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/1227c042-c73e-4593-9d4b-7e83873c2754" alt="">
+                </div>
+
+                <div class="curosal">
+					<img src="/images/h1.jpg" alt="">
+                </div>
+                <div class="curosal">
+					<img src="/images/h1.jpg" alt="">
+                </div>
+                
+                
+            </div>
+            <div class="sec">
+                <a href="/form" class="button">Make an Appoinment</a>            </div>
+        </div>
+    </section>
+    <section class="sec2" id="service">
+        
+        <div class="condition">
+            <h1>Hospital Services and Conditions</h1>
+            <h4>                Emergency & Inpatient Care:
+            </h4>
+            <li> 24/7 emergency services, inpatient admissions, and specialized treatments (e.g., surgery, maternity, and ICU care).
+            </li>
+            <h4> Outpatient & Diagnostic Services:</h4>
+            <li> Routine consultations, lab tests, imaging, and minor procedures.
+            </li>
+            <h4>Patient Rights & Responsibilities:</h4>
+            <li>Patients must provide accurate information, follow treatment plans, and have the right to quality care and privacy.
+            </li>
+            <h4>Insurance & Billing:</h4>
+            <li>Insurance details required; patients may need to cover co-pays and out-of-pocket expenses.
+            </li>
+            <h4>Visitation & Safety:</h4>
+            <li>Visitors must adhere to hospital rules; smoking and alcohol are prohibited; patient safety protocols are strictly followed.</p>
+            </li>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <div class="footercontent">
+            <p>RK HOSPITAL</p>
+            <div class="link">
+                <h4>Quick Link</h4>
+                <ul>
+                    <li><a href="#service">service and conditions</a></li>
+                    <!-- <li><a href="">find a doctor</a></li> -->
+                    <li><a href="">patient and visitors</a></li>
+                    <!-- <li><a href="/appointment">location</a></li> -->
+                    <li><a href="#header">home</a></li>
+                    <li><a href="">about</a></li>
+                </ul>
+            </div>
+            <div class="socialmedia">
+                <h4>Follow Us</h4>
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+            </div>
+            <div class="hours">
+                <h4>Operating Hours</h4>
+                <p>Mon-Sun:24 Hours</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
