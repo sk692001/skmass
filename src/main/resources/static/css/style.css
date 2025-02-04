@@ -1,0 +1,164 @@
+
+*{
+  margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+  margin: 0 px;
+  background-color: #007bff;
+  color: white;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    justify-content:space-between;
+    z-index: 1000; /* Ensures the header is always on top */
+
+}
+    nav ul{
+    list-style-type:none;
+    padding: 0;
+
+}
+nav ul li{
+    display: inline;
+    margin: 0 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+.sec1 .curosalcontainer{
+  margin: 0px;
+
+   /* width: 100%; */
+    height: 700px;
+    /* max-width: 800px; */
+    /* margin: auto; */
+    overflow: hidden;
+}
+.sec1 .curosalcontainer .container{
+  /* margin: 0px; */
+  /* padding: 0px; */
+    display: flex;
+    transition:transform 2s ease-in-out;
+
+}
+.sec1 .curosalcontainer .container .curosal{
+  /* width: 100%; */
+}
+.curosal img{
+    /* width: 100%; */
+    /* display: block; */
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+  }
+  .sec1 .curosalcontainer .container .curosal{
+    animation: slide 10s infinite;
+
+  }
+  footer{
+	background-color: black;
+    text-align: center;
+    /* width: 100%; */
+    padding: 20px;
+    color: white;
+  }
+  footer .footercontent{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ footer  .link,.socialmedia,.hours{
+    margin: 10px 0;
+  }
+ footer .link ul{
+    list-style-type: none;
+    padding: 0;
+  }
+ footer .link li{
+    margin: 5px 0;
+  }
+ footer .link a{
+    color: white;
+    text-decoration: none;
+  }
+ footer .link a:hover{
+    text-decoration: underline;
+  }
+ footer .socialmedia a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+ footer .socialmedia a:hover{
+    text-decoration: underline;
+  }
+ footer .hours{
+    text-align: center;
+  }
+  .sec1{
+  
+    /* display: inline-block; */
+   
+    
+
+  }
+  .sec2{
+	background-color: aqua;
+	width: 100%; position: relative;
+     
+
+  }
+ .sec1 .sec .button {
+    position: absolute;
+    top: 60%;          /* Position the button vertically in the center */
+    left: 50%;         /* Position the button horizontally in the center */
+    transform: translate(-50%, -50%); /* Center the button */
+    padding: 30px 40px;
+    background-color: rgba(0, 0, 255, 0.6);  /* Semi-transparent background */
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sec1 .sec .button:hover {
+  background-color: rgba(0, 0, 255, 0.8);
+}
+.sec2 .condition {
+	background-image:url("/images/hospital.png");
+	background-color: aqua;
+  position: relative;
+  width: 100%;
+  top: 50%;
+  left: 700px; 
+  .sec2{
+	background-image: url('/src/main/resources/static/images/download\ \(2\).jfif');
+  }        
+      
+  transform: translate(-50%, -50%); /* Center the button */
+  /* padding: 30px 40px; */
+  /* background-color: rgba(0, 0, 255, 0.6);  Semi-transparent background */
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+   
+  .img1{
+    /* width: ; */
+  }

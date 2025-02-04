@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 20px;
+        }
+
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #007bff;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>All Appointments</h1>
+</header>
+
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+				<th>Id</th>
+
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Date of Birth</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Reason</th>
+                <th>Appointment Date</th>
+                <th>Doctor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="appointment : ${appointment}">
+				<td th:text="${appointment.id}"></td>
+
+                <td th:text="${appointment.name}"></td>
+                <td th:text="${appointment.gender}"></td>
+                <td th:text="${appointment.dob}"></td>
+                <td th:text="${appointment.address}"></td>
+                <td th:text="${appointment.email}"></td>
+                <td th:text="${appointment.phone}"></td>
+                <td th:text="${appointment.reason}"></td>
+                <td th:text="${appointment.appointmentDate}"></td>
+                <td th:text="${appointment.doctor}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="/">Back to Home</a>
+</div>
+
+<footer>
+    <p>&copy; 2025 RK Hospital. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
